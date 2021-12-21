@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MonthlyContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Monthly_IncomeReportController">
+   <children>
+      <BarChart layoutX="37.0" layoutY="103.0" prefHeight="360.0" prefWidth="547.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis prefHeight="302.0" prefWidth="26.0" side="LEFT">
+               <tickLabelFont>
+                  <Font size="15.0" />
+               </tickLabelFont>
+            </NumberAxis>
+         </yAxis>
+      </BarChart>
+      <AnchorPane layoutX="98.0" layoutY="176.0" prefHeight="260.0" prefWidth="44.0" style="-fx-background-color: #81ecec;" />
+      <AnchorPane layoutX="155.0" layoutY="251.0" prefHeight="185.0" prefWidth="44.0" style="-fx-background-color: #81ecec;" />
+      <AnchorPane layoutX="225.0" layoutY="164.0" prefHeight="271.0" prefWidth="44.0" style="-fx-background-color: #81ecec;" />
+      <AnchorPane layoutX="294.0" layoutY="176.0" prefHeight="260.0" prefWidth="44.0" style="-fx-background-color: #81ecec;" />
+      <AnchorPane layoutX="351.0" layoutY="134.0" prefHeight="301.0" prefWidth="44.0" style="-fx-background-color: #81ecec;" />
+      <AnchorPane layoutX="412.0" layoutY="344.0" prefHeight="94.0" prefWidth="44.0" style="-fx-background-color: #81ecec;" />
+      <AnchorPane layoutX="474.0" layoutY="239.0" prefHeight="196.0" prefWidth="44.0" style="-fx-background-color: #81ecec;" />
+      <AnchorPane layoutX="2.0" prefHeight="539.0" prefWidth="33.0" style="-fx-background-color: #a4b0be;" />
+      <Label layoutX="26.0" layoutY="24.0" prefHeight="25.0" prefWidth="189.0" text="   INCOM REPORT">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="194.0" layoutY="41.0" prefHeight="0.0" prefWidth="359.0" />
+      <JFXButton buttonType="RAISED" layoutX="121.0" layoutY="64.0" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #b2bec3;" text="Daily">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="285.0" layoutY="64.0" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #4b6584;" text="Monthly" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="442.0" layoutY="64.0" onAction="#Anually_IncomOnAction" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #b2bec3;" text="Annualy">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="242.0" layoutY="497.0" prefHeight="28.0" prefWidth="197.0" text="    Sale of Items by Monthly">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="218.0" prefHeight="28.0" prefWidth="44.0" text="Incom" />
+      <Label layoutX="98.0" layoutY="446.0" prefHeight="17.0" prefWidth="33.0" text="Jan" />
+      <Label layoutX="161.0" layoutY="446.0" prefHeight="17.0" prefWidth="33.0" text=" Feb" />
+      <Label layoutX="231.0" layoutY="446.0" prefHeight="17.0" prefWidth="44.0" text=" March" />
+      <Label layoutX="300.0" layoutY="446.0" prefHeight="17.0" prefWidth="33.0" text=" April" />
+      <Label layoutX="357.0" layoutY="446.0" prefHeight="17.0" prefWidth="33.0" text=" May" />
+      <Label layoutX="418.0" layoutY="446.0" prefHeight="17.0" prefWidth="33.0" text=" May" />
+      <Label layoutX="480.0" layoutY="446.0" prefHeight="17.0" prefWidth="33.0" text="June" />
+      <Label layoutX="540.0" layoutY="446.0" prefHeight="17.0" prefWidth="33.0" text="July" />
+      <Label layoutX="491.0" layoutY="497.0" prefHeight="28.0" prefWidth="98.0" text="  2021">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="497.0" prefHeight="28.0" prefWidth="126.0" text=" 0 - 25 = Rs . 25000.00" />
+   </children>
+</AnchorPane>

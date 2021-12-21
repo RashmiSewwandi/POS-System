@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoginFormContext" prefHeight="568.0" prefWidth="1144.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <AnchorPane layoutY="-3.0" prefHeight="128.0" prefWidth="1144.0" style="-fx-background-color: #ffa502;">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="394.0" layoutX="388.0" layoutY="25.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/store.JPG" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label layoutX="449.0" layoutY="86.0" prefHeight="36.0" prefWidth="261.0" text="        Every Product , Nice Service">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <Separator layoutX="5.0" layoutY="135.0" prefHeight="7.0" prefWidth="1128.0" style="-fx-background-color: #f0932b;" />
+      <ImageView fx:id="imgCustomer" fitHeight="88.0" fitWidth="127.0" layoutX="42.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/images.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="95.0" fitWidth="96.0" layoutX="1034.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/download%20(1).jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-2.0" layoutY="265.0" prefHeight="303.0" prefWidth="1144.0" style="-fx-background-color: #ced6e0;">
+         <children>
+            <Region layoutX="442.0" layoutY="70.0" prefHeight="181.0" prefWidth="289.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 10;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Region>
+            <JFXButton fx:id="btnCashier" layoutX="598.0" layoutY="198.0" onAction="#Casheir_Form_OnAction" prefHeight="27.0" prefWidth="96.0" style="-fx-background-color: #7ed6df;" text="Casheir" textFill="#20035e">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnAdmin" layoutX="480.0" layoutY="198.0" onAction="#Admin_Form_OnAction" prefHeight="27.0" prefWidth="96.0" style="-fx-background-color: #7ed6df;" text="Admin" textFill="#190240">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="txtUserName" layoutX="480.0" layoutY="91.0" onAction="#move_ToPassword" prefHeight="25.0" prefWidth="220.0" promptText="User Name" style="-fx-border-color: Blue;" />
+            <PasswordField fx:id="txtPassword" layoutX="479.0" layoutY="135.0" prefHeight="27.0" prefWidth="220.0" promptText="Password" style="-fx-border-color: blue;" />
+            <Label layoutX="590.0" layoutY="162.0" prefHeight="17.0" prefWidth="111.0" text="  Forgotton Password ? " textFill="#3c2add" underline="true">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="527.0" layoutY="34.0" prefHeight="36.0" prefWidth="127.0" text="   Welcome" textFill="#1b138a">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="95.0" fitWidth="111.0" layoutX="846.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/download.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="95.0" fitWidth="88.0" layoutX="959.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/download%20(2).jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="5.0" layoutY="251.0" prefHeight="7.0" prefWidth="1128.0" style="-fx-background-color: #f0932b;" />
+      <ImageView fitHeight="97.0" fitWidth="163.0" layoutX="156.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/957-9573156_general-store-items-png.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="320.0" layoutX="340.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/download%2066.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="174.0" layoutX="660.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/download%20(pp.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

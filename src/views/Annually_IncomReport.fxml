@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="AnnuallyContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Annually_IncomReportController">
+   <children>
+      <BarChart layoutX="46.0" layoutY="129.0" prefHeight="361.0" prefWidth="551.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT">
+               <tickLabelFont>
+                  <Font size="15.0" />
+               </tickLabelFont>
+            </NumberAxis>
+         </yAxis>
+      </BarChart>
+      <Label layoutX="40.0" layoutY="26.0" prefHeight="25.0" prefWidth="189.0" text="   INCOM REPORT">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="135.0" layoutY="64.0" onAction="#DailyIncomOnAction" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #b2bec3;" text="Daily">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="220.0" layoutY="43.0" prefHeight="0.0" prefWidth="357.0" />
+      <JFXButton buttonType="RAISED" layoutX="285.0" layoutY="64.0" onAction="#MonthlyIncomOnAction" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #b2bec3;" text="Monthly">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="442.0" layoutY="64.0" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #4b6584;" text="Annualy" textFill="#f8f7f7">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="150.0" layoutY="329.0" prefHeight="136.0" prefWidth="44.0" style="-fx-background-color: #81ecec;" />
+      <AnchorPane layoutX="233.0" layoutY="282.0" prefHeight="183.0" prefWidth="44.0" style="-fx-background-color: #81ecec;" />
+      <AnchorPane layoutX="320.0" layoutY="236.0" prefHeight="229.0" prefWidth="44.0" style="-fx-background-color: #81ecec;" />
+      <AnchorPane layoutX="405.0" layoutY="210.0" prefHeight="256.0" prefWidth="44.0" style="-fx-background-color: #81ecec;" />
+      <AnchorPane layoutX="491.0" layoutY="142.0" prefHeight="322.0" prefWidth="44.0" style="-fx-background-color: #81ecec;" />
+      <AnchorPane layoutX="7.0" layoutY="-1.0" prefHeight="541.0" prefWidth="34.0" style="-fx-background-color: #a4b0be;" />
+      <Label layoutX="238.0" layoutY="500.0" prefHeight="28.0" prefWidth="204.0" text="    Sale of Items by Annualy">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="218.0" prefHeight="28.0" prefWidth="34.0" text="Incom" />
+      <Label layoutX="133.0" layoutY="469.0" prefHeight="17.0" prefWidth="79.0" text="       2017" />
+      <Label layoutX="216.0" layoutY="469.0" prefHeight="17.0" prefWidth="79.0" text="       2018" />
+      <Label layoutX="388.0" layoutY="469.0" prefHeight="17.0" prefWidth="79.0" text="       2020" />
+      <Label layoutX="309.0" layoutY="469.0" prefHeight="17.0" prefWidth="79.0" text="     2019" />
+      <Label layoutX="474.0" layoutY="469.0" prefHeight="17.0" prefWidth="79.0" text="        2021" />
+      <Label layoutX="72.0" layoutY="500.0" prefHeight="28.0" prefWidth="126.0" text=" 0 - 25 = Rs . 50000.00" />
+      <Label layoutX="459.0" layoutY="499.0" prefHeight="31.0" prefWidth="143.0" text="  2017 - 2021">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

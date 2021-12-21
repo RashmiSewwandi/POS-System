@@ -1,0 +1,62 @@
+DROP DATABASE IF EXISTS Storemarket;
+CREATE DATABASE IF NOT EXISTS Storemarket;
+SHOW DATABASES ;
+USE Storemarket;
+
+
+
+DROP TABLE IF EXISTS Customer;
+CREATE TABLE IF NOT EXISTS Customer(
+    id VARCHAR(20),
+    title VARCHAR(20),
+    name VARCHAR(100) NOT NULL DEFAULT 'Unknown',
+    address VARCHAR(30),
+    city VARCHAR(20),
+    province VARCHAR(20),
+    postalcode VARCHAR(15),
+    CONSTRAINT PRIMARY KEY (id)
+    );
+SHOW TABLES ;
+DESCRIBE Customer;
+
+
+DROP TABLE IF EXISTS `Order`;
+CREATE TABLE IF NOT EXISTS `Order`(
+    orderid VARCHAR(15),
+    id VARCHAR(20),
+    orderdate DATE,
+    ordertime VARCHAR(15),
+    cost DOUBLE DEFAULT 0.00,
+    CONSTRAINT PRIMARY KEY (orderid),
+    CONSTRAINT FOREIGN KEY (id) REFERENCES Customer(id) ON DELETE CASCADE ON UPDATE CASCADE
+    );
+SHOW TABLES ;
+DESCRIBE `Order`;
+
+
+DROP TABLE IF EXISTS Item;
+CREATE TABLE IF NOT EXISTS Item(
+    itemcode VARCHAR(15),
+    description VARCHAR(50),
+    packsize  VARCHAR(15),
+    unitprice DOUBLE DEFAULT 0.0,
+    qtyOnHand INT DEFAULT 0,
+    CONSTRAINT PRIMARY KEY (itemcode)
+    );
+SHOW TABLES ;
+DESCRIBE Item;
+
+
+
+DROP TABLE IF EXISTS `Order Detail`;
+CREATE TABLE IF NOT EXISTS `Order Detail`(
+    itemcode VARCHAR(15),
+    orderid VARCHAR(15),
+    qty INT,
+    price DOUBLE DEFAULT 0.0,
+    CONSTRAINT PRIMARY KEY (itemcode, orderid),
+    CONSTRAINT FOREIGN KEY (itemcode) REFERENCES Item(itemcode) ON DELETE CASCADE ON UPDATE CASCADE ,
+    CONSTRAINT FOREIGN KEY (orderid) REFERENCES `Order`(orderid) ON DELETE CASCADE ON UPDATE CASCADE
+    );
+SHOW TABLES ;
+DESCRIBE `Order Detail`;
